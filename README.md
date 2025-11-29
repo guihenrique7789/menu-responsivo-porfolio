@@ -13,9 +13,7 @@ O menu se adapta para **desktop e dispositivos móveis**, priorizando usabilidad
 - Abertura e fechamento com animações suaves
 - Painéis laterais de conteúdo (“Sobre”, “Projetos” e “Contato”)
 - Overlay para foco no conteúdo ativo
-- Fechamento por botão, clique fora ou tecla `Esc`
 - Controle de estado via classes CSS
-- Estrutura organizada com `data-attributes`
 
 ---
 
@@ -45,5 +43,6 @@ Este projeto foi desenvolvido com foco em:
 - No **desktop**, o menu aparece de forma tradicional no topo
 - No **mobile**, o menu se transforma em um menu hambúrguer em tela cheia
 - Os painéis de conteúdo se adaptam para melhor leitura em telas menores
+
 
 ---
