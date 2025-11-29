@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu Responsivo | Portfólio</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="mobile-navbar.js" defer></script>
+</head>
+<body>
+
+<img src="sc.gif" alt="Elemento decorativo" class="sonic">
+
+<header class="header">
+  <nav class="nav container" aria-label="Menu principal">
+
+    <a href="#inicio" class="brand">
+      GH<span>-</span>Menu
+    </a>
+    
+    <button 
+      class="menu-toggle" 
+      aria-label="Abrir menu"
+      aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul class="nav-links">
+      <li><button class="nav-link" data-panel="sobre">Sobre</button></li>
+      <li><button class="nav-link" data-panel="projetos">Projetos</button></li>
+      <li><button class="nav-link" data-panel="contato">Contato</button></li>
+    </ul>
+
+  </nav>
+</header>
+
+<main id="inicio"></main>
+
+<section class="panel" data-panel-content="sobre" role="dialog" aria-hidden="true">
+  <button class="close-panel" aria-label="Fechar painel">×</button>
+  <h2>Sobre mim</h2>
+  <p>Front-end focado em experiências modernas e acessíveis.</p>
+  <ul>
+    <li>HTML, CSS, JavaScript</li>
+    <li>Responsividade</li>
+    <li>Git/GitHub</li>
+  </ul>
+</section>
+
+<section class="panel" data-panel-content="projetos" role="dialog" aria-hidden="true">
+  <button class="close-panel" aria-label="Fechar painel">×</button>
+  <h2>Projetos</h2>
+  <ul>
+    <li>Uploader local de arquivos</li>
+    <li>Menu responsivo animado</li>
+    <li>Página de portfólio</li>
+  </ul>
+</section>
+
+<section class="panel" data-panel-content="contato" role="dialog" aria-hidden="true">
+  <button class="close-panel" aria-label="Fechar painel">×</button>
+  <h2>Contato</h2>
+  <p>Email: henrique7789@gmail.com</p>
+  <p>GitHub: github.com/guihenrique7789</p>
+</section>
+
+<div class="overlay" aria-hidden="true"></div>
+
+</body>
+</html>
